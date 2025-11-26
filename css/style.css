@@ -1,0 +1,366 @@
+@import url("https://fonts.googleapis.com/css2?family=Barriecito&family=Barrio&family=Outfit:wght@100..900&display=swap");
+
+:root{
+	--primary-color:#2c2c2c;
+	--secondary-color:#646464;
+}
+
+body{
+	font-family: "Outfit", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color:white;
+}
+
+h1,h2,h3{
+	font-family: "Barrio",sans-serif;
+}
+
+header{
+	display: flex;
+	justify-content: space-between;
+    align-items: center;
+	padding: 1rem;
+    background-color: black;
+    min-height: 50px;
+    position: relative;
+}
+
+.portfolio-text{
+    margin-left: 12vb;
+}
+
+nav{
+	width: 400px;
+    height:50px;
+    align-items: center;
+    font-family: "Barriecito", sans-serif;
+    margin-right: 12vb;
+}
+
+nav ul{
+	display: flex;
+	list-style: none;
+	justify-content: space-between;
+    align-items: center;
+}
+
+#nav-elements li a{
+	text-decoration: none;
+	color: white;
+    font-size: 18px;
+}
+
+#nav-elements li a:hover{
+	font-size: 20px;
+}
+
+.hero-video{
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:center;
+  z-index:0;
+}
+
+#hero{
+    display: flex;
+	height: 400px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 60px;
+    padding: 0;
+    box-shadow: none;
+    position:relative;
+    height:60vh;
+    min-height:360px;
+    overflow:hidden;
+    font-family: "Barriecito", sans-serif;
+}
+
+#profile-pic{
+  width:200px;
+  height:auto;
+  border-radius:4px;
+  margin-right:40px;
+}
+
+#hero-text{
+  position:relative;
+  z-index:2;
+  text-align:center;
+  padding:2rem;
+  max-width:900px;
+  margin:0 1rem;
+  border-radius:12px;
+}
+
+#hero-text p{
+    font-family: "Barriecito", sans-serif;
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+h1{
+    font-size: 16vb;
+    margin: 0;
+    margin-top: 10px;
+}
+
+#about-content{
+	display: flex;
+}
+
+section{
+	margin: 20px 60px;
+	padding: 40px;
+	background-color: var(--primary-color);
+    border-radius: 8px;
+    font-family: "Outfit", sans-serif;
+    scroll-margin-top: 20px;
+    box-shadow: 5px 5px 0px var(--secondary-color);
+}
+
+.skill-cards{
+    display:flex;
+    flex-wrap:wrap;
+    gap:1rem;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.skill-card{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding:1rem;
+    background-color: #3c3c3c;
+    width:100px;
+}
+
+.skill-link{
+    text-decoration: none;
+    color: inherit;
+}
+
+.skill-card:hover {
+    background-color: var(--secondary-color);
+    transition: all 0.1s ease-in-out;
+    cursor: pointer;
+}
+
+.skill-card img{
+    width: 35px;
+    height: 35px;
+}
+
+#projects {
+    display: block;
+}
+
+.projects-title {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.project-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    align-items: start;
+}
+
+.project-card {
+    padding: 1rem;
+    background-color: #333;
+    border: 2px solid var(--secondary-color);
+    box-shadow: 3px 3px 0px var(--secondary-color);
+    border-radius: 6px;
+}
+
+.project-card img {
+    width: 100%;
+    height: auto;
+    border: 2px solid var(--secondary-color);
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
+
+
+#contact form{
+    display:flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#contact label{
+    font-family: "Barriecito", sans-serif;
+    font-size: 18px;
+    margin-top: 1rem;
+}
+
+#contact input, textarea{
+    font-family: "Outfit", sans-serif;
+    padding: 0.75em;
+    border: none;
+    background-color: whitesmoke;
+    box-shadow: 5px 5px 0px var(--secondary-color);
+    font-size:16px;
+    resize: vertical;
+    font-weight: 500;
+    color: var(--primary-color);
+}
+
+#contact button{
+    font-family: "Barriecito", sans-serif;
+    padding: 0.75em;
+    margin-top:1.5rem;
+    background-color: #3c3c3c;
+    box-shadow: 5px 5px 0px var(--secondary-color);
+    border:none;
+    color:white;
+    font-size:18px;
+    cursor:pointer;
+}
+
+#contact button:hover {
+    background-color: var(--secondary-color);
+    color: white;
+    box-shadow: 3px 3px 0px #3c3c3c;
+    transition: all 0.2s ease-in-out;
+}
+
+.video-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+footer{
+    font-family: "Barriecito", sans-serif;
+    font-size: 20px;
+	display:flex;
+	justify-content: center;
+    padding: 2rem;
+}
+
+.hamburger {
+  cursor: pointer;
+  display: none; /* hidden on desktop */
+}
+
+.hamburger input {
+  display: none;
+}
+
+.hamburger svg {
+  height: 3em;
+  transition: transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.line {
+  fill: none;
+  stroke: white;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 3;
+  transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+              stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.line-top-bottom {
+  stroke-dasharray: 12 63;
+}
+
+.hamburger input:checked + svg {
+  transform: rotate(-45deg);
+}
+
+.hamburger input:checked + svg .line-top-bottom {
+  stroke-dasharray: 20 300;
+  stroke-dashoffset: -32.42;
+}
+
+@media (max-width: 768px) {
+  nav {
+    width: auto;
+    height: auto;
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    background: #111;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 0 20px black;
+    z-index: 9999;       /* <-- added */
+  }
+
+  nav.show {
+    display: block;
+  }
+
+  #nav-elements {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .hamburger {
+    display: block;
+    margin-right: 12vb;
+  }
+}
+
+@media (max-width: 836px){
+    #about-content{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #profile-pic{
+        margin-right:0;
+        margin-bottom:20px;
+    }
+
+    h1{
+        font-size: 12vh;
+        margin: 0;
+        margin-top: 10px;
+    }
+
+
+    #hero-text p{
+        font-family: "Barriecito", sans-serif;
+        font-size: 16px;
+        margin-top: 10px;
+    }
+
+
+}
+
+@media (max-width:636px){
+    h1{
+        font-size: 8vh;
+        margin: 0;
+        margin-top: 10px;
+    }
+
+
+    #hero-text p{
+        font-family: "Barriecito", sans-serif;
+        font-size: 12px;
+        margin-top: 10px;
+    }
+}
+
+
+@media (max-width:412px){
+    #profile-pic{
+        width:150px;
+    }
+
+}

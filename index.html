@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Rishi Saraff - Portfolio</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+
+	<header>
+		<h2 class = "portfolio-text">Portfolio</h2>
+
+		<label class="hamburger" id="hamburger-btn">
+			<input type="checkbox" id="hamburger-checkbox">
+			<svg viewBox="0 0 32 32">
+				<path class="line line-top-bottom"
+					d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22">
+				</path>
+				<path class="line" d="M7 16 27 16"></path>
+			</svg>
+		</label>
+
+		<nav id="navbar">
+			<ul id="nav-elements">
+				<li><a href="#about">About</a></li>
+				<li><a href="#skills">Skills</a></li>
+				<li><a href="#projects">Projects</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<main>
+		<section id="hero">
+			<video class="hero-video" autoplay muted loop>
+				<source src="videos/cinema.mp4" type="video/mp4">
+				<source src="videos/black-dash.mp4" type="video/mp4">
+				<source src="videos/source.mov" type="video/mov">
+				<source src="videos/source.mp4" type="video/mp4">
+				Video Not Supported on Your Browser.
+			</video>
+			<div id="hero-text">
+				<h1>Rishi Saraff</h1>
+				<p>Innovator • Full-Stack Developer • Systems Designer</p>
+			</div>
+		</section>
+
+		<section id="about">
+			<h2>About Me</h2>
+			<div id="about-content">
+				<img id="profile-pic" src="images/profile.jpg" alt="profile-picture">
+				<p>I'm a passionate (and occasionally frustrated) developer with a love for building web experiences,
+					designing AI systems, and solving hard problems. I do full-stack development but think bigger—as a
+					systems designer, problem solver, and lifelong learner. <br>My focus is on creating practical,
+					efficient, and meaningful work rather than following trends. When I'm not experimenting with code
+					and systems, I enjoy exploring ideas that bridge technology, science, and human curiosity.</p>
+			</div>
+		</section>
+
+		<section id="skills">
+			<h2>Skills</h2>
+
+			<div class="skill-cards">
+				<a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" class="skill-link">
+					<div class="skill-card">
+						<img src="images/html5.png" alt="A HTML5 logo" />
+						<h3>HTML5</h3>
+					</div>
+				</a>
+				<a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank" class="skill-link">
+					<div class="skill-card">
+						<img src="images/css-3.png" alt="A CSS3 logo" />
+						<h3>CSS3</h3>
+					</div>
+				</a>
+				<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" class="skill-link">
+					<div class="skill-card">
+						<img src="images/js.png" alt="A JavaScript logo" />
+						<h3>JavaScript</h3>
+					</div>
+				</a>
+				<a href="https://www.python.org/" target="_blank" class="skill-link">
+					<div class="skill-card">
+						<img src="images/python.png" alt="A Python logo" />
+						<h3>Python</h3>
+					</div>
+				</a>
+				<a href="https://nodejs.org/" target="_blank" class="skill-link">
+					<div class="skill-card">
+						<img src="images/nodejs.png" alt="A NodeJS logo" />
+						<h3>NodeJS</h3>
+					</div>
+				</a>
+				<a href="https://www.postgresql.org/" target="_blank" class="skill-link">
+					<div class="skill-card">
+						<img src="images/postgres.png" alt="A PostgreSQL logo" />
+						<h3>PostgreSQL</h3>
+					</div>
+				</a>
+				<a href="https://react.dev/" target="_blank" class="skill-link">
+					<div class="skill-card">
+						<img src="images/react.png" alt="A React logo" />
+						<h3>React</h3>
+					</div>
+				</a>
+				<a href="https://www.oracle.com/java/" target="_blank" class="skill-link">
+					<div class="skill-card">
+						<img src="images/java.png" alt="A Java logo" />
+						<h3>Java</h3>
+					</div>
+				</a>
+				<a href="https://www.docker.com/" target="_blank" class="skill-link">
+					<div class="skill-card">
+						<img src="images/docker.png" alt="A Docker logo" />
+						<h3>Docker</h3>
+					</div>
+				</a>
+				<a href="https://platform.openai.com/" target="_blank" class="skill-link">
+					<div class="skill-card">
+						<img src="images/openai.png" alt="A OpenAI logo" />
+						<h3>OpenAI API</h3>
+					</div>
+				</a>
+				<a href="https://git-scm.com/" target="_blank" class="skill-link">
+					<div class="skill-card">
+						<img src="images/git.png" alt="A Git logo" />
+						<h3>Git</h3>
+					</div>
+				</a>
+			</div>
+		</section>
+
+		<section id="projects">
+			<h2 class="projects-title">Projects</h2>
+			<div class="project-cards">
+                <div class="project-card">
+                    <img
+                        src="images/project1.png"
+                        alt="Weather App Screenshot"
+                    />
+                    <h3>Weather App</h3>
+                    <p>
+                        This weather app lets users search for any city and view current weather conditions, including temperature, humidity, and forecasts. The backend is built in PHP, which handles API requests and serves data to the front end efficiently.
+                    </p>
+                </div>
+                <div class="project-card">
+                    <img
+                        src="images/project2.png"
+                        alt="Portfolio Site Screenshot"
+                    />
+                    <h3>Portfolio Site</h3>
+                    <p>A personal portfolio site that highlights my work as a full-stack developer and systems designer. Features include responsive design, smooth navigation, and sections for projects, skills, and contact. Built using HTML and CSS (for now).</p>
+                </div>
+				<div class="project-card">
+					<img
+                        src="images/project3.png"
+                        alt="To Do Site Screenshot"
+                    />
+                    <h3>Portfolio Site</h3>
+					<h3>Task Manager App</h3>
+					<p>A web application that helps users manage their tasks and to-do lists efficiently with features
+						like deadlines and reminders.</p>
+				</div>
+		</section>
+
+		<section id="contact">
+			<h2>Contact Me</h2>
+			<p>If you'd like to get in touch, feel free to send me a message using the form below:</p>
+			<form id="contact-form" action="">
+				<label for="name">Name :</label>
+				<input type="text" id="name" name="name" placeholder="Your name..">
+				<label for="email">Email :</label>
+				<input type="email" id="email" name="email" placeholder="Your email..">
+				<label for="message">Message :</label>
+				<textarea name="message" id="message" placeholder="Type your message here..." rows="5"></textarea>
+				<button type="submit">Send</button>
+				<div id="form-message"></div>
+			</form>
+		</section>
+
+		<div class="video-wrapper">
+			<video id="submit-video" width="300" style="display:none; margin-top: 1rem;" autoplay muted loop>
+				<source src="videos/submit-video.mp4" type="video/mp4">
+				Your browser does not support the video tag.
+			</video>
+		</div>
+	</main>
+
+	<footer>
+		<p>&copy; Rishi Saraff. All rights reserved.</p>
+	</footer>
+
+	<script src="scripts/script.js"></script>
+
+</body>
+
+</html>
